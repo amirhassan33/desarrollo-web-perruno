@@ -1,0 +1,1062 @@
+@import url('https://fonts.googleapis.com/css2?family=Splash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Edu+TAS+Beginner:wght@700&family=Lemon&family=Prompt:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*------------Esto es el header------------*/
+
+.cabeza__navegador{
+    background-image: linear-gradient(to right, orange, yellow, red);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabeza__navegador__lista{
+    display: flex;
+}
+
+.cabeza__navegador__imagen{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.cabeza__navegador__lista__menu{
+    list-style: none;
+    background-color: rgb(42, 204, 28);
+    border-radius: 10px;
+    padding: 5px;
+    border-width: 2px;
+    border-style: solid;
+    margin: 10px;
+    height: 20px;
+    transition: 3s;
+}
+
+.cabeza__navegador__lista__menu:hover{
+    transform: rotateZ(360deg);
+}
+
+.cabeza__navegador__lista__acceso{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px){
+    .cabeza__navegador{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 910px){
+    .cabeza__navegador__lista{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+/*------------Esto es el main------------*/
+
+.cuerpo{
+    background: linear-gradient(rgba(255, 255, 255, 0.842), rgba(182, 171, 171, 0.74)), url("../img/familia.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*------------Esto es la seccion 1/5 del main------------*/
+
+.cuerpo__playa__caja{
+    position: relative;
+}
+
+.cuerpo__playa__caja__imagen{
+    width: 100%;
+}
+
+.cuerpo__playa__caja__texto{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: blueviolet;
+    margin-bottom: 80px;
+    position: absolute;
+    right: 25%;
+    top: 50%;
+    background-color: azure;
+}
+
+/*------------Esto es la seccion 2/5 del main------------*/
+
+.cuerpo__principal__caja__titulo{
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-style: italic;
+    text-align: center;
+    text-decoration: dotted;
+    font-family: 'Splash', cursive;
+    color: black;
+    margin: 120px 0px 80px 0px;
+}
+
+.cuerpo__principal__caja__texto{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*------------Esto es la seccion 3/5 del main------------*/
+
+/*Esta es la seccion que aplique grilla*/
+
+.cuerpo__ellos{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.cuerpo__ellos__item__imagen{
+    width: 100%;
+    height: 100%;
+}
+
+.cuerpo__ellos__itemcaja{
+    border: solid;
+    border-color: blue;
+    border-radius: 25px;
+    height: 100%;
+    transition: 2s;
+}
+
+.cuerpo__ellos__itemcaja:hover{
+    height: 90%;
+    background-color: aquamarine;
+    color: darkorange;
+}
+
+.cuerpo__ellos__item__imagenellos{
+    width: 100%;
+    height: 80%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.cuerpo__ellos__item__titulo{
+    text-align: center;
+    color: blueviolet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    margin: 10px;
+}
+
+.cuerpo__ellos__item__descripcion{
+    text-align: center;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+                
+.cuerpo__ellos__item1, .cuerpo__ellos__item2, .cuerpo__ellos__item7{
+    grid-column: span 2;
+}
+
+@media screen and (max-width: 1570px){
+    .cuerpo__ellos{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 950px){
+    .cuerpo__ellos{
+        grid-template-columns: 1fr;
+    }
+    .cuerpo__ellos__item3, .cuerpo__ellos__item4, .cuerpo__ellos__item5, .cuerpo__ellos__item6, .cuerpo__ellos__item8{
+        grid-column: span 2;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .cuerpo__ellos__item__descripcion{
+        font-size: x-small;
+
+    }
+}
+                
+/*------------Esto es la seccion 4/5 del main------------*/
+
+.cuerpo__especial__caja{
+    display: flex;
+    padding: 30px;
+}
+
+.cuerpo__especial__titulo{
+    text-align: center;
+    margin: 70px 0px 50px 0px;
+}
+
+.cuerpo__especial__caja__izquierda__imagen{
+    width: 50vw;
+    height: 1100px;
+    border-style: solid;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.cuerpo__especial__caja__derecha{
+    background-image: radial-gradient(rgb(242, 255, 0), pink, orange);
+    border-style: solid;
+    height: 1100px;
+    width: 50%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuerpo__especial__caja__derecha__imagen{
+    width: 500px;
+    height: 500px;
+}
+
+.cuerpo__especial__caja__derecha__texto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    margin: 20px;
+}
+
+.cuerpo__especial__caja__derecha__ruta{
+    text-decoration: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    margin: 4px 2px;
+    background-color: blue;
+    border-style: double;
+    border-radius: 10px;
+    transition: 3s;
+}
+
+.cuerpo__especial__caja__derecha__ruta:hover{
+    background-color: aqua;
+    color: green;
+}
+
+@media screen and (max-width: 1600px){
+    .cuerpo__especial__caja{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .cuerpo__especial__caja__izquierda__imagen{
+        width: 100%;
+        height: 50%;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+
+    }
+    .cuerpo__especial__caja__derecha{
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 484px){
+    .cuerpo__especial__caja__derecha__imagen{
+        width: 300px;
+        height: 300px;
+    }
+
+}
+
+/*------------Esto es la seccion 5/5 del main------------*/
+
+.cuerpo__icono__position__imagen{
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 150px;
+    right: 30px;
+    transition-property: width height;
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.cuerpo__icono__position__imagen:hover{
+    width: 120px;
+    height: 120px;
+}
+
+@media screen and (max-width: 768px){
+    .cuerpo__icono__position__imagen{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/*------------Esto es el footer------------*/
+
+.pie__caja__imagen{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.pie__caja{
+    background-image: linear-gradient(to left, green, yellow, blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.pie__caja__texto{
+    width: 100%;
+    height: 120px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 920px){
+    .pie__caja{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .pie__caja__imagen{
+        display: block;
+    }
+    .pie__caja__texto{
+        width: 100%;
+        font-size: small;
+    }
+}
+
+/*------------Esto es el main de nuestra raza------------*/
+
+/*Esta es la pagina completa que aplique grilla*/
+
+.cuerpo__chihuahua__caja{
+    padding: 80px;
+    border: 30px;
+    border-style: double;
+    margin: 0px 10px 20px 10px;
+    border-radius: 30px;
+}
+
+.cuerpo__chihuahua__caja__titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(60, 88, 32);
+}
+
+.cuerpo__chihuahua__caja__texto{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color: rgba(33, 43, 43, 0.911);
+}
+
+.cuerpo__historia__caja{
+    padding: 80px;
+    border: 30px;
+    border-style: double;
+    margin: 0px 10px 20px 10px;
+    border-radius: 30px;
+}
+
+.cuerpo__historia__caja__titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(54, 42, 3);
+}
+
+.cuerpo__historia__caja__texto{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(165, 95, 16, 0.911);
+}
+
+.cuerpo__apariencia__caja{
+    padding: 80px;
+    border: 30px;
+    border-style: double;
+    margin: 0px 10px 20px 10px;
+    border-radius: 30px;
+}
+
+.cuerpo__apariencia__caja__titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Edu TAS Beginner', cursive;
+    color: rgb(54, 13, 3);
+}
+
+.cuerpo__apariencia__caja__texto{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    color: rgba(16, 165, 23, 0.911);
+}
+
+.cuerpo__temperamento__caja{
+    padding: 80px;
+    border: 30px;
+    border-style: double;
+    margin: 0px 10px 20px 10px;
+    border-radius: 30px;
+}
+
+.cuerpo__temperamento__caja__titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Lemon', cursive;
+    color: rgb(216, 24, 97);
+}
+
+.cuerpo__temperamento__caja__texto{
+    text-align: center;
+    font-family: 'Prompt', sans-serif;
+    color: rgba(94, 69, 90, 0.911);
+}
+
+.cuerpo__salud__caja{
+    padding: 80px;
+    border: 30px;
+    border-style: double;
+    margin: 0px 10px 20px 10px;
+    border-radius: 30px;
+}
+
+.cuerpo__salud__caja__titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(59, 24, 216);
+}
+
+.cuerpo__salud__caja__texto{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(69, 75, 94, 0.911);
+}
+
+.cuerpo__alimentacion__caja{
+    padding: 80px;
+    border: 30px;
+    border-style: double;
+    margin: 0px 10px 20px 10px;
+    border-radius: 30px;
+}
+
+.cuerpo__alimentacion__caja__titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Lemon', cursive;
+    color: rgb(216, 126, 24);
+}
+
+.cuerpo__alimentacion__caja__texto{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(69, 69, 94, 0.911);
+}
+
+.cuerpo__gestacionyparto__caja{
+    padding: 80px;
+    border: 30px;
+    border-style: double;
+    margin: 0px 10px 0px 10px;
+    border-radius: 30px;
+}
+
+.cuerpo__gestacionyparto__caja__titulo{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(29, 13, 19);
+    
+}
+
+.cuerpo__gestacionyparto__caja__texto{
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(14, 1, 11, 0.911);
+}
+
+/*Aqui aplico la grilla*/
+
+.aplicar__grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "cabeza cabeza cabeza"
+    "aside cuerpo cuerpo"
+    "pie pie pie"
+    ;
+}
+
+.aplicar__grid__cabeza{
+    grid-area: cabeza;
+}
+
+.aplicar__grid__cuerpo{
+    grid-area: cuerpo;
+}
+
+.aplicar__grid__aside{
+    grid-area: aside;
+}
+
+.aplicar__grid__pie{
+    grid-area: pie;
+}
+
+/*------------Esto es el aside de nuestra raza------------*/
+
+.aplicar__grid__aside__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(to top, orange, rgb(27, 179, 27), coral);
+}
+
+.aplicar__grid__aside__section__caja1{
+    width: 370px;
+    height: 950px;
+    border: outset rgb(238, 255, 0) 20px;
+    background-color: aquamarine;
+}
+
+.aplicar__grid__aside__section__caja1__titulo1{
+    color: blue;
+    background-color: chartreuse;
+    text-align: center;
+}
+
+.aplicar__grid__aside__section__caja1__imagen1{
+    width: 100%;
+}
+
+.aplicar__grid__aside__section__caja2{
+    width: 240px;
+    height: 200px;
+    border: outset rgb(0, 4, 255) 15px;
+    background-color: aquamarine;
+}
+
+.aplicar__grid__aside__section__caja2__imagen2{
+    width: 100%;
+}
+
+.aplicar__grid__aside__section__caja3{
+    width: 340px;
+    height: 350px;
+    border: outset red 15px;
+    background-color: aquamarine;
+}
+
+.aplicar__grid__aside__section__caja3__imagen3{
+    width: 100%;
+}
+
+.aplicar__grid__aside__section__caja4{
+    width: 400px;
+    height: 450px;
+    border: outset rgb(255, 0, 81) 15px;
+    background-color: aquamarine;
+}
+
+.aplicar__grid__aside__section__caja4__imagen4{
+    width: 100%;
+}
+
+.aplicar__grid__aside__section__caja5{
+    width: 380px;
+    height: 360px;
+    border: outset rgb(255, 170, 0) 15px;
+    background-color: aquamarine;
+}
+
+.aplicar__grid__aside__section__caja5__imagen5{
+    width: 100%;
+}
+
+.aplicar__grid__aside__section__caja6{
+    width: 380px;
+    height: 600px;
+    border: outset rgb(0, 110, 255) 15px;
+    background-color: aquamarine;
+}
+
+.aplicar__grid__aside__section__caja6__imagen6{
+    width: 100%;
+}
+
+.aplicar__grid__aside__section__caja7{
+    width: 350px;
+    height: 380px;
+    border: outset rgb(221, 0, 255) 15px;
+    background-color: aquamarine;
+}
+
+.aplicar__grid__aside__section__caja7__imagen7{
+    width: 100%;
+}
+
+.aplicar__grid__aside__section__caja8{
+    width: 380px;
+    height: 550px;
+    border: outset rgb(255, 0, 0) 15px;
+    background-color: aquamarine;
+}
+
+.aplicar__grid__aside__section__caja8__imagen8{
+    width: 100%;
+}
+
+.aplicar__grid__aside__section__caja__texto{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(128, 9, 128);
+}
+
+@media screen and (max-width: 1007px){
+    .aplicar__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "cabeza"
+        "cuerpo"
+        "aside"
+        "pie"
+        ;
+    }
+    .aplicar__margen{
+        margin: 20px;
+    }
+}
+
+/*------------Esto es el main de acerca de nosotros------------*/
+
+.cuerpo__titulo{
+    text-align: center;
+    color: darkorchid;
+    padding-top: 40px;
+    font-size: xx-large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cuerpo__cumple__caja{
+    background-color:rgb(205, 255, 213);
+    width: 350px;
+    margin: 10px;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+.cuerpo__cumple__caja__imagen{
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cuerpo__cumple__caja__titulo{
+    text-align: center;
+}
+
+.cuerpo__cumple__caja__texto{
+    padding: 10px;
+}
+
+.cuerpo__cumple{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cuerpo__paseo__caja{
+    background-color:rgb(205, 227, 255);
+    width: 450px;
+    margin: 20px;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+.cuerpo__paseo__caja__imagen{
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cuerpo__paseo__caja__titulo{
+    text-align: center;
+}
+
+.cuerpo__paseo__caja__texto{
+    padding: 10px;
+}
+
+.cuerpo__paseo{
+    display: flex;
+    justify-content: center;
+}
+
+.cuerpo__fiestas__caja{
+    background-color:rgb(231, 205, 255);
+    width: 450px;
+    margin: 20px;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+.cuerpo__fiestas__caja__imagen{
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cuerpo__fiestas__caja__titulo{
+    text-align: center;
+}
+
+.cuerpo__fiestas__caja__texto{
+    padding: 10px;
+}
+
+.cuerpo__fiestas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cuerpo__vacaciones__caja{
+    background-color:rgb(255, 205, 251);
+    width: 500px;
+    margin: 20px;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+.cuerpo__vacaciones__caja__imagen{
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cuerpo__vacaciones__caja__titulo{
+    text-align: center;
+}
+
+.cuerpo__vacaciones__caja__texto{
+    padding: 10px;
+}
+
+.cuerpo__vacaciones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cuerpo__todos__caja{
+    background-color:rgb(255, 215, 205);
+    width: 500px;
+    margin: 20px;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+.cuerpo__todos__caja__imagen{
+    width: 100%;
+    height: 500px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.cuerpo__todos__caja__titulo{
+    text-align: center;
+}
+
+.cuerpo__todos__caja__texto{
+    padding: 10px;
+}
+
+.cuerpo__todos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:480px){
+    .cuerpo__todos__caja__imagen, .cuerpo__vacaciones__caja__imagen, .cuerpo__fiestas__caja__imagen, .cuerpo__paseo__caja__imagen, .cuerpo__cumple__caja__imagen{
+        height: 300px;
+    }
+}
+
+/*------------Esto es el main de contacto------------*/
+
+.cuerpo__mapa{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cuerpo__seccion{
+    padding: 30px;
+}
+
+.cuerpo__seccion__formulario__campo{
+    padding: 20px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__nombre__label{
+    color: blue;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__nombre__input{
+    background-color: rgb(245, 199, 114);
+    margin: 5px;
+    padding: 5px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__apellido__label{
+    color: blue;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__apellido__input{
+    background-color: rgb(245, 199, 114);
+    margin: 5px;
+    padding: 5px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__correo__label{
+    color: blue;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__correo__input{
+    background-color: rgb(245, 199, 114);
+    margin: 5px;
+    padding: 5px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__contrasena__label{
+    color: blue;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__contrasena__input{
+    background-color: rgb(245, 199, 114);
+    margin: 5px;
+    padding: 5px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__sexo__texto{
+    color: blue;
+    margin: 20px 20px 10px 0px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__sexo__label{
+    color: rgb(255, 0, 85);
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__sexo__input{
+    margin: 5px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__comentario__texto{
+    color: blue;
+    margin: 20px 20px 10px 0px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__comentario__textarea{
+    background-color: rgb(245, 199, 114);
+
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__pais__texto{
+    color: blue;
+    margin: 20px 20px 10px 0px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__pais__select{
+    background-color: rgb(245, 199, 114);
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__botonenviar{
+    margin: 30px 20px 20px 0px;
+    padding: 10px;
+    background-color: aqua;
+    color: blue;
+    border-radius: 5px;
+}
+
+.cuerpo__seccion__formulario__campo__leyenda__caja__botonreset{
+    margin: 30px 20px 20px 0px;
+    padding: 10px;
+    background-color: red;
+    color: blue;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 1480px){
+    .cuerpo__mapa{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .cuerpo__mapa__mapa{
+        width: 100%;
+    }
+
+    .cuerpo__mapa__imagen1{
+        width: 100%;
+    }
+
+    .cuerpo__mapa__imagen2{
+        width: 100%;
+    }
+}
+
+/*------------Esto es el main de servicios------------*/
+
+.cuerpo__servicios__caja__titulo{
+    text-decoration: underline;
+    text-align: center;
+    font-size: xx-large;
+    padding: 20px;
+}
+
+.cuerpo__servicios__caja__texto1{
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(46, 11, 78, 0.103);
+    border-radius: 15px;
+    text-align: center;
+    border-style: dashed;
+    font-size: larger;
+}
+
+.cuerpo__servicios__caja__texto2{
+    margin: 30px;
+    padding: 20px;
+    background-color: rgba(219, 124, 34, 0.103);
+    border-radius: 15px;
+    text-align: center;
+    border-style: double;
+    font-size: medium;
+}
+
+.cuerpo__servicios__caja__texto3{
+    margin: 30px 20px 0px 20px;
+    padding: 20px;
+    background-color: rgba(78, 10, 38, 0.103);
+    border-radius: 15px;
+    text-align: center;
+    border-style: dotted;
+    font-size: medium;
+    font-weight: 900;
+}
+
+.cuerpo__servicios__caja__texto4{
+    margin: 30px 20px 0px 20px;
+    padding: 20px;
+    background-color: rgba(27, 61, 214, 0.719);
+    border-radius: 15px;
+    text-align: center;
+    border-style: solid;
+    font-size: medium;
+    font-weight: 900;
+}
+
+.cuerpo__servicios__caja__texto4:hover{
+    animation: visitanos 5s;
+}
+
+@keyframes visitanos {
+    0%{
+        background-color: rgba(27, 61, 214, 0.719);
+        color: black;
+    }
+    25%{
+        background-color: rgba(51, 61, 107, 0.719);
+        color: yellow;
+    }
+    50%{
+        background-color: aqua;
+        color: blueviolet;
+    }
+    75%{
+        background-color: blueviolet;
+        color: aqua;
+    }
+    100%{
+        background-color: rgba(27, 61, 214, 0.719);
+        color: black;
+    }
+}
+
+.cuerpo__servicios__caja{
+    padding: 30px;
+}
+
+.cuerpo__video{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cuerpo__video__tysuby{
+    padding: 0px 20px 40px 20px;
+}
+
+.cuerpo__video__djbobo{
+    padding: 0px 20px 40px 20px;
+}
+
+@media screen and (max-width: 1600px){
+    .cuerpo__video{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 970px){
+    .cuerpo__video{
+        flex-direction: row;
+    }
+
+    .cuerpo__video__tysuby, .cuerpo__video__djbobo{
+        width: 40%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 612px){
+    .cuerpo__video{
+        flex-direction: column;
+    }
+
+    .cuerpo__video__tysuby, .cuerpo__video__djbobo{
+        width: 70%;
+        height: 100%;
+    }
+}
