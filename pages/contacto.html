@@ -1,112 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Contactos</title>
 </head>
+
 <body>
 
-    <header class="cabeza"> <!--Esto es el header-->
-        <nav class="cabeza__navegador">
-            <img class="cabeza__navegador__imagen" src="../img/patitas.png" alt="Logo">
-            <ul class="cabeza__navegador__lista">
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../index.html">Inicio</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../pages/acercadenosotros.html">Acerca de nosotros</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../pages/contacto.html">Contacto</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../pages/nuestraraza.html">Nuestra raza</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../pages/servicios.html">Servicios</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="#acceso">Click para ir directo a las redes sociales</a></li>
-            </ul>
+    <header> <!--Esto es el header-->
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="imagen_navbab" src="../img/patitas.png"
+                        alt="Patitas"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nuestraraza.html">Nuestra raza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/acercadenosotros.html">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    
+
     <main class="cuerpo"> <!--Esto es el main-->
-        <section class="cuerpo__seccion">
-            <form action="" class="cuerpo__seccion__formulario">
-                <fieldset class="cuerpo__seccion__formulario__campo">
-                    <legend class="cuerpo__seccion__formulario__campo__leyenda">Ingrese sus datos personales</legend>
-                        <div class="cuerpo__seccion__formulario__campo__leyenda__caja">
-                            <div class="cuerpo__seccion__formulario__campo__leyenda__caja__nombre">
-                                <label class="cuerpo__seccion__formulario__campo__leyenda__caja__nombre__label" for="nombre">Nombre: </label>
-                                <input class="cuerpo__seccion__formulario__campo__leyenda__caja__nombre__input" type="text" name="nombre" placeholder="Ingresa tu nombre completo">
-                            </div>
-                    
-                            <div class="cuerpo__seccion__formulario__campo__leyenda__caja__apellido">
-                                <label class="cuerpo__seccion__formulario__campo__leyenda__caja__apellido__label" for="apellido">Apellido: </label>
-                                <input class="cuerpo__seccion__formulario__campo__leyenda__caja__apellido__input" type="text" name="apellido" placeholder="Ingresa tu apellido">
-                            </div>
-                    
-                            <div class="cuerpo__seccion__formulario__campo__leyenda__caja__correo">
-                                <label class="cuerpo__seccion__formulario__campo__leyenda__caja__correo__label" for="correo">Correo electronico: </label>
-                                <input class="cuerpo__seccion__formulario__campo__leyenda__caja__correo__input" type="email" name="correo" placeholder="Ingresa tu correo electronico">
-                            </div>
-                    
-                            <div class="cuerpo__seccion__formulario__campo__leyenda__caja__contrasena">
-                                <label class="cuerpo__seccion__formulario__campo__leyenda__caja__contrasena__label" for="contrasena">Contraseña: </label>
-                                <input class="cuerpo__seccion__formulario__campo__leyenda__caja__contrasena__input" type="password" name="contrasena" placeholder="Ingresa tu contraseña">
-                            </div>
-                    
-                            <div class="cuerpo__seccion__formulario__campo__leyenda__caja__sexo">
-                                <p class="cuerpo__seccion__formulario__campo__leyenda__caja__sexo__texto">Elegi tu sexo por favor: </p>
-                                <label class="cuerpo__seccion__formulario__campo__leyenda__caja__sexo__label" for="masculino">Masculino</label>
-                                <input class="cuerpo__seccion__formulario__campo__leyenda__caja__sexo__input" type="radio" name="sexo"><br>
-                                <label class="cuerpo__seccion__formulario__campo__leyenda__caja__sexo__label" for="femenino">Femenino</label>
-                                <input class="cuerpo__seccion__formulario__campo__leyenda__caja__sexo__input" type="radio" name="sexo"><br>
-                                <label class="cuerpo__seccion__formulario__campo__leyenda__caja__sexo__label" for="otros">Otros</label>
-                                <input class="cuerpo__seccion__formulario__campo__leyenda__caja__sexo__input" type="radio" name="sexo">
-                            </div>
-                    
-                            <div class="cuerpo__seccion__formulario__campo__leyenda__caja__comentario">
-                                <p class="cuerpo__seccion__formulario__campo__leyenda__caja__comentario__texto">Dejanos tu comentario</p>
-                                <textarea class="cuerpo__seccion__formulario__campo__leyenda__caja__comentario__textarea" name="" id="" cols="30" rows="10"></textarea>
-                            </div>
-                    
-                            <div class="cuerpo__seccion__formulario__campo__leyenda__caja__pais">
-                                <p class="cuerpo__seccion__formulario__campo__leyenda__caja__pais__texto">Elegi tu pais</p>
-                                <select class="cuerpo__seccion__formulario__campo__leyenda__caja__pais__select" name="" id="">
-                                    <option value="">Argentina</option>
-                                    <option value="">Peru</option>
-                                    <option value="">Uruguay</option>
-                                </select>
-                            </div>
-                    
-                            <input class="cuerpo__seccion__formulario__campo__leyenda__caja__botonenviar" type="submit">
-                            <input class="cuerpo__seccion__formulario__campo__leyenda__caja__botonreset" type="reset">
-                        </div>
+        
+        <h3 class="text-center text-danger p-5">Ingresa tus datos personales</h3>
+        <section> <!--Aqui aplique bootstrap-->
+            <form class="row w-100 p-3 g-3">
+                <div class="col-md-6">
+                    <label for="inputnombre" class="form-label">Nombre completo</label>
+                    <input type="text" class="form-control" id="inputnombre" placeholder="Ingresa tu nombre completo">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputapellido" class="form-label">Apellido</label>
+                    <input type="text" class="form-control" id="inputapellido" placeholder="Ingresa tu apellido">
+                </div>
+                <div class="col-12">
+                    <label for="inputdireccion" class="form-label">Direccion</label>
+                    <input type="text" class="form-control" id="inputdireccion" placeholder="Ingresa tu direccion">
+                </div>
+                <div class="col-12">
+                    <label for="inputcorreo" class="form-label">Correo electronico</label>
+                    <input type="email" class="form-control" id="inputcorreo"
+                        placeholder="Ingresa tu correo electronico">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputtelefono" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" id="inputtelefono" placeholder="Ingresa tu telefono">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputpais" class="form-label">Pais</label>
+                    <select id="inputpais" class="form-select form-control">
+                        <option selected>Elegi tu pais</option>
+                        <option>Argentina</option>
+                        <option>Peru</option>
+                        <option>Chile</option>
+                        <option>Uruguay</option>
+                        <option>Paraguay</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label for="inputcodigopostal" class="form-label">C. postal</label>
+                    <input type="text" class="form-control" id="inputcodigopostal"
+                        placeholder="Ingresa tu codigo postal">
+                </div>
+                <fieldset>
+                    <legend class="form-label col-xl-1 col-lg-2 col-md-2 col-sm-3 col-5">Ingresa tu sexo</legend>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Masculino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Fmenino
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                            Otro
+                        </label>
+                    </div>
                 </fieldset>
+                <div class="form-floating">
+                    <textarea class="form-control" id="areadetexto" style="height: 100px"></textarea>
+                    <label for="areadetexto">Deja tu comentario aqui</label>
+                </div>
+                <div class="col-12 d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary m-2 mb-3">Enviar</button>
+                    <button type="reset" class="btn btn-success m-2 mb-3">Borrar</button>
+                </div>
             </form>
-            
         </section>
 
         <section class="cuerpo__mapa">
             <img class="cuerpo__mapa__imagen1" src="../img/feliz.png" alt="Perrito feliz">
-            <iframe class="cuerpo__mapa__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1562969070933!2d-58.4608444841761!3d-34.549597862144665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4261f6e6129%3A0x236ef0d53bdcc0ae!2sGuayra%201810%2C%20C1429%20CIH%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656477840275!5m2!1ses-419!2sar" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="cuerpo__mapa__mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1562969070933!2d-58.4608444841761!3d-34.549597862144665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb4261f6e6129%3A0x236ef0d53bdcc0ae!2sGuayra%201810%2C%20C1429%20CIH%2C%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1656477840275!5m2!1ses-419!2sar"
+                width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             <img class="cuerpo__mapa__imagen2" src="../img/cabeza.png" alt="Perritos chocando la cabeza">
         </section>
 
         <section class="cuerpo__icono">
             <div class="cuerpo__icono__position">
-                <a class="cuerpo__icono__position__link" href="https://wa.me/+5491136260941"><img class="cuerpo__icono__position__imagen" src="../img/whatsapp.png" alt=""></a>
+                <a class="cuerpo__icono__position__link" href="https://wa.me/+5491136260941"><img
+                        class="cuerpo__icono__position__imagen" src="../img/whatsapp.png" alt=""></a>
             </div>
         </section>
     </main>
 
     <footer id="acceso" class="pie"> <!--Esto es el footer-->
+        
         <div class="pie__caja">
             <div class="pie__caja__redessociales">
-                <a class="pie__caja__ruta" href="https://www.facebook.com/cristian.nasso"><img class="pie__caja__imagen" src="../img/facebook.png" alt="Facebook"></a>
-                <a class="pie__caja__ruta" href="https://www.instagram.com/cristianalejandronasso/"><img class="pie__caja__imagen" src="../img/instagram.png" alt="Instagram"></a>
-                <a class="pie__caja__ruta" href="@"><img class="pie__caja__imagen" src="../img/twitter.png" alt="Twitter"></a> <!--No tengo Twitter-->
-                <a class="pie__caja__ruta" href="https://www.linkedin.com/in/cristian-alejandro-nasso-21375720/"><img class="pie__caja__imagen" src="../img/linkedin.png" alt="Linkedin"></a>
+                <a class="pie__caja__ruta" href="https://www.facebook.com/cristian.nasso"><img class="pie__caja__imagen"
+                        src="../img/facebook.png" alt="Facebook"></a>
+                <a class="pie__caja__ruta" href="https://www.instagram.com/cristianalejandronasso/"><img
+                        class="pie__caja__imagen" src="../img/instagram.png" alt="Instagram"></a>
+                <a class="pie__caja__ruta" href="@"><img class="pie__caja__imagen" src="../img/twitter.png"
+                        alt="Twitter"></a> <!--No tengo Twitter-->
+                <a class="pie__caja__ruta" href="https://www.linkedin.com/in/cristian-alejandro-nasso-21375720/"><img
+                        class="pie__caja__imagen" src="../img/linkedin.png" alt="Linkedin"></a>
             </div>
             <div>
-                <p class="pie__caja__texto">Cristian Alejandro Nasso. <br> Guayra 1810 Piso 5 Departamento C. <br> Capital Federal. Nuñez. Codigo Postal 1429. <br> cristiannasso2@gmail.com</p>
+                <p class="pie__caja__texto">Cristian Alejandro Nasso. <br> Guayra 1810 Piso 5 Departamento C. <br>
+                    Capital Federal. Nuñez. Codigo Postal 1429. <br> cristiannasso2@gmail.com</p>
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

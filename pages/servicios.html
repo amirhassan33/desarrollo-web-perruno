@@ -1,74 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Servicios</title>
 </head>
+
 <body>
 
-    <header class="cabeza"> <!--Esto es el header-->
-        <nav class="cabeza__navegador">
-            <img class="cabeza__navegador__imagen" src="../img/patitas.png" alt="Logo">
-            <ul class="cabeza__navegador__lista">
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../index.html">Inicio</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../pages/acercadenosotros.html">Acerca de nosotros</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../pages/contacto.html">Contacto</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../pages/nuestraraza.html">Nuestra raza</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="../pages/servicios.html">Servicios</a></li>
-                <li class="cabeza__navegador__lista__menu"><a class="cabeza__navegador__lista__acceso" href="#acceso">Click para ir directo a las redes sociales</a></li>
-            </ul>
+    <header> <!--Esto es el header-->
+        
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="imagen_navbab" src="../img/patitas.png"
+                        alt="Patitas"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nuestraraza.html">Nuestra raza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/acercadenosotros.html">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main class="cuerpo"> <!--Esto es el main-->
+        
         <section class="cuerpo__servicios">
             <div class="cuerpo__servicios__caja">
                 <h2 class="cuerpo__servicios__caja__titulo">Nuestros servicios perrunos</h2>
-                <p class="cuerpo__servicios__caja__texto1">Como veras en esta web no te vamos, ni estamos, vendiendo nada. Quiza te regalemos una sonrisa al recorrer nuestra web y conocernos. Pero lo que si te vamos a contar y ofrecer son nuestros servicios de desarrollo web.</p>
-                
-                <p class="cuerpo__servicios__caja__texto2">Te contamos que nuestro papa ya tiene 5 certificados y ahora va por su sexto certificado en la carrera Desarrollo de aplicaciones. Estos son los certificados que con tanto esfuerzo logro.</p>
-                
-                <p class="cuerpo__servicios__caja__texto3">Curso de Introducción al Desarrollo Web: HTML y CSS (1/2) otorgado por Google. 5 modulos 40 horas donde uso VISUAL STUDIO CODE, HTML y CSS. <br>
-                Curso de Introducción al Desarrollo Web: HTML y CSS (2/2) otorgado por Google. Fueron 4 modulos 40 horas donde uso VISUAL STUDIO CODE, HTML y CSS.
-                Curso de Desarrollo de Apps Móviles otorgado por Google. Fueron 8 modulos 40 horas. <br>
-                Desarrollador de Aptugo Certificado otorgado por Aptugo. Fueron 15 clases 30 horas MONGODB, NODEJS y APTUGO. <br>
-                FULL STACK JAVA otorgado por el Ministerio de Educacion de la Ciudad de Buenos Aires. Fueron 40 clases 60 horas donde uso VISUAL STUDIO CODE, HTML, CSS,BOOTSTRAP, JAVASCRIPT, GIT, GITHUB, MYSQL, PHPMYADMIN, XAMP y JAVADB.</p>
-                
-                <p class="cuerpo__servicios__caja__texto4">Contactate con nosotros o nuestro papa perruno para que diseñe tu proxima pagina web y lleves tu negocio al maximo nivel. Mientras te decidis a llamarnos te dejamos mas abajo nuestros videos favoritos.</p>
+                <p class="cuerpo__servicios__caja__texto1">Como veras en esta web no te vamos, ni estamos, vendiendo
+                    nada. Quiza te regalemos una sonrisa al recorrer nuestra web y conocernos. Pero lo que si te vamos a
+                    contar y ofrecer son nuestros servicios de desarrollo web.</p>
+
+                <p class="cuerpo__servicios__caja__texto3">Curso de Introducción al Desarrollo Web: HTML y CSS (1/2)
+                    otorgado por Google. 5 modulos 40 horas donde uso VISUAL STUDIO CODE, HTML y CSS. <br>
+                    Curso de Introducción al Desarrollo Web: HTML y CSS (2/2) otorgado por Google. Fueron 4 modulos 40
+                    horas donde uso VISUAL STUDIO CODE, HTML y CSS.
+                    Curso de Desarrollo de Apps Móviles otorgado por Google. Fueron 8 modulos 40 horas. <br>
+                    Desarrollador de Aptugo Certificado otorgado por Aptugo. Fueron 15 clases 30 horas MONGODB, NODEJS y
+                    APTUGO. <br>
+                    FULL STACK JAVA otorgado por el Ministerio de Educacion de la Ciudad de Buenos Aires. Fueron 40
+                    clases 60 horas donde uso VISUAL STUDIO CODE, HTML, CSS,BOOTSTRAP, JAVASCRIPT, GIT, GITHUB, MYSQL,
+                    PHPMYADMIN, XAMP y JAVADB.</p>
+
+                <p class="cuerpo__servicios__caja__texto4">Contactate con nosotros o nuestro papa perruno para que
+                    diseñe tu proxima pagina web y lleves tu negocio al maximo nivel. Mientras te decidis a llamarnos te
+                    dejamos mas abajo nuestros videos favoritos.</p>
 
             </div>
         </section>
 
+        <section class="container container__bootstrap mb-5"> <!--Aqui aplique bootstrap-->
+            
+            <div class="row">
+                <div class="col-lg-6 col-sm-12 col-12">
+                    <img class="w-100" src="../img/goldocortado.png" alt="Noah estudiando">
+                </div>
+                <div class="col-lg-6 col-sm-12 col-12 d-flex align-items-lg-center">
+                    <p class="text-center">Te contamos que nuestro papa perruno esta cursando actualmente la carrera
+                        Desarrollo de Aplicaciones en Coderhouse, Full Stack Python en Codo a Codo 4.0 y curso de ingles
+                        en Pearson.</p>
+                </div>
+            </div>
+        </section>
+
         <section class="cuerpo__video">
-            <iframe class="cuerpo__video__tysuby" width="900" height="500" src="https://www.youtube.com/embed/z_lpCeRcJMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
-            <iframe class="cuerpo__video__djbobo" width="900" height="500" src="https://www.youtube.com/embed/G7QME0bzZuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="cuerpo__video__tysuby" width="900" height="500"
+                src="https://www.youtube.com/embed/z_lpCeRcJMw" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+            <iframe class="cuerpo__video__djbobo" width="900" height="500"
+                src="https://www.youtube.com/embed/G7QME0bzZuA" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </section>
 
         <section class="cuerpo__icono">
             <div class="cuerpo__icono__position">
-                <a class="cuerpo__icono__position__link" href="https://wa.me/+5491136260941"><img class="cuerpo__icono__position__imagen" src="../img/whatsapp.png" alt=""></a>
+                <a class="cuerpo__icono__position__link" href="https://wa.me/+5491136260941"><img
+                        class="cuerpo__icono__position__imagen" src="../img/whatsapp.png" alt=""></a>
             </div>
         </section>
 
     </main>
 
     <footer id="acceso" class="pie"> <!--Esto es el footer-->
+        
         <div class="pie__caja">
             <div class="pie__caja__redessociales">
-                <a class="pie__caja__ruta" href="https://www.facebook.com/cristian.nasso"><img class="pie__caja__imagen" src="../img/facebook.png" alt="Facebook"></a>
-                <a class="pie__caja__ruta" href="https://www.instagram.com/cristianalejandronasso/"><img class="pie__caja__imagen" src="../img/instagram.png" alt="Instagram"></a>
-                <a class="pie__caja__ruta" href="@"><img class="pie__caja__imagen" src="../img/twitter.png" alt="Twitter"></a> <!--No tengo Twitter-->
-                <a class="pie__caja__ruta" href="https://www.linkedin.com/in/cristian-alejandro-nasso-21375720/"><img class="pie__caja__imagen" src="../img/linkedin.png" alt="Linkedin"></a>
+                <a class="pie__caja__ruta" href="https://www.facebook.com/cristian.nasso"><img class="pie__caja__imagen"
+                        src="../img/facebook.png" alt="Facebook"></a>
+                <a class="pie__caja__ruta" href="https://www.instagram.com/cristianalejandronasso/"><img
+                        class="pie__caja__imagen" src="../img/instagram.png" alt="Instagram"></a>
+                <a class="pie__caja__ruta" href="@"><img class="pie__caja__imagen" src="../img/twitter.png"
+                        alt="Twitter"></a> <!--No tengo Twitter-->
+                <a class="pie__caja__ruta" href="https://www.linkedin.com/in/cristian-alejandro-nasso-21375720/"><img
+                        class="pie__caja__imagen" src="../img/linkedin.png" alt="Linkedin"></a>
             </div>
             <div>
-                <p class="pie__caja__texto">Cristian Alejandro Nasso. <br> Guayra 1810 Piso 5 Departamento C. <br> Capital Federal. Nuñez. Codigo Postal 1429. <br> cristiannasso2@gmail.com</p>
+                <p class="pie__caja__texto">Cristian Alejandro Nasso. <br> Guayra 1810 Piso 5 Departamento C. <br>
+                    Capital Federal. Nuñez. Codigo Postal 1429. <br> cristiannasso2@gmail.com</p>
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
