@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/estilos.css">
     <title>Mi proyecto sobre mascotas inteligentes</title>
 </head>
 
 <body>
-
     <header> <!--Esto es el header-->
-        
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"><img class="imagen_navbab" src="./img/patitas.png"
+                <a class="navbar-brand" href="./index.html"><img
+                        class="imagen_navbab animate__animated animate__rubberBand" src="./img/patitas.png"
                         alt="Patitas"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,19 +26,24 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html"><img src="./img/home.png"
+                                    alt="Casa"> Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/nuestraraza.html">Nuestra raza</a>
+                            <a class="nav-link" href="./pages/nuestraraza.html"><img src="./img/dog.png" alt="Perro">
+                                Nuestra raza</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                            <a class="nav-link" href="./pages/servicios.html"><img src="./img/briefcase.png"
+                                    alt="Trabajo"> Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/acercadenosotros.html">Acerca de nosotros</a>
+                            <a class="nav-link" href="./pages/acercadenosotros.html"><img src="./img/heart.png"
+                                    alt="Corazon"> Acerca de nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="./pages/contacto.html"><img src="./img/mensaje.png" alt="Mensaje">
+                                Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -47,7 +52,6 @@
     </header>
 
     <main class="cuerpo"> <!--Esto es el main-->
-        
         <section> <!--Aqui aplique bootstrap-->
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -109,11 +113,14 @@
 
         <section class="cuerpo__principal">
             <div class="cuerpo__principal__caja">
-                <h1 class="cuerpo__principal__caja__titulo">Mis cuatro perritos diseñadores web</h1>
-                <p class="cuerpo__principal__caja__texto">Aqui les presentamos a los perros mas famosos de Nuñez.
-                    Encargados de edificios, diarieros, negocios y vecinos del barrio los esperan en el paseo de la
-                    mañana y de la tarde para saludarlos y convidarles una rica galletita. Estas preparado para
-                    conocerlos???</p>
+                <div class="cuerpo__principal__caja__flex">
+                    <img class="cuerpo__principal__caja__flex__imagen" src="./img/perritoalegre.png"
+                        alt="Perrito alegre">
+                    <h1 class="cuerpo__principal__caja__flex__titulo">Mis cuatro perritos diseñadores web</h1>
+                    <img class="cuerpo__principal__caja__flex__imagen" src="./img/perritopaseando.png"
+                        alt="Perrito paseando">
+                </div>
+                <p class="cuerpo__principal__caja__texto">Aqui les presentamos a los perros mas famosos de Nuñez. Encargados de edificios, diarieros, negocios y vecinos del barrio los esperan en el paseo de la mañana y de la tarde para saludarlos y convidarles una rica galletita. Estas preparado para conocerlos???</p>
             </div>
         </section>
 
@@ -127,26 +134,22 @@
             <div class="cuerpo__ellos__itemcaja cuerpo__ellos__item3">
                 <img class="cuerpo__ellos__item__imagenellos" src="./img/amir.png" alt="Amir">
                 <h3 class="cuerpo__ellos__item__titulo">Amir</h3>
-                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Amir, tengo 10 años y el 16 de julio cumplo 11
-                    años. Soy chihuahua macho de pelo corto y color blanco</p>
+                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Amir, tengo 10 años y el 16 de julio cumplo 11 años. Soy chihuahua macho de pelo corto y color blanco.</p>
             </div>
             <div class="cuerpo__ellos__itemcaja cuerpo__ellos__item4">
                 <img class="cuerpo__ellos__item__imagenellos" src="./img/yamil.png" alt="Yamil">
                 <h3 class="cuerpo__ellos__item__titulo">Yamil</h3>
-                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Yamil, tengo 9 años y el 6 de octubre cumplo 10
-                    años. Soy chihuahua macho de pelo corto y color marron</p>
+                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Yamil, tengo 9 años y el 6 de octubre cumplo 10 años. Soy chihuahua macho de pelo corto y color marron.</p>
             </div>
             <div class="cuerpo__ellos__itemcaja cuerpo__ellos__item5">
                 <img class="cuerpo__ellos__item__imagenellos" src="./img/denzel.png" alt="Denzel">
                 <h3 class="cuerpo__ellos__item__titulo">Denzel</h3>
-                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Denzel, tengo 7 años y el 4 de octubre cumplo 8
-                    años. Soy chihuahua macho de pelo largo y color negro</p>
+                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Denzel, tengo 7 años y el 4 de octubre cumplo 8 años. Soy chihuahua macho de pelo largo y color negro.</p>
             </div>
             <div class="cuerpo__ellos__itemcaja cuerpo__ellos__item6">
                 <img class="cuerpo__ellos__item__imagenellos" src="./img/noah.png" alt="Noah">
                 <h3 class="cuerpo__ellos__item__titulo">Noah</h3>
-                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Noah, tengo 6 años y el 13 de octubre cumplo 7
-                    años. Soy chihuahua macho de pelo corto y color negro</p>
+                <p class="cuerpo__ellos__item__descripcion">Mi nombre es Noah, tengo 6 años y el 13 de octubre cumplo 7 años. Soy chihuahua macho de pelo corto y color negro.</p>
             </div>
             <div class="cuerpo__ellos__item cuerpo__ellos__item7">
                 <img class="cuerpo__ellos__item__imagen" src="./img/collarflores.png"
@@ -170,9 +173,7 @@
                 <div class="cuerpo__especial__caja__derecha">
                     <img class="cuerpo__especial__caja__derecha__imagen" src="./img/happy-birthday.png"
                         alt="Feliz cumpleaños">
-                    <p class="cuerpo__especial__caja__derecha__texto">Aca vas a conocer nuestros dias festivos con
-                        nuestros padres perrunos. Cumpleaños, navidades y todos los dias especiales que nos encanta
-                        pasar en familia.</p>
+                    <p class="cuerpo__especial__caja__derecha__texto">Aca vas a conocer nuestros dias festivos con nuestros padres perrunos. Cumpleaños, navidades y todos los dias especiales que nos encanta pasar en familia.</p>
                     <a class="cuerpo__especial__caja__derecha__ruta" href="./pages/acercadenosotros.html">Conocenos</a>
                     <img class="cuerpo__especial__caja__derecha__imagen" src="./img/hello-summer.png" alt="Hola verano">
                 </div>
@@ -186,8 +187,8 @@
             </div>
         </section>
     </main>
-
-    <footer id="acceso" class="pie"> <!--Esto es el footer-->
+    
+    <footer class="pie"> <!--Esto es el footer-->
         <div class="pie__caja">
             <div class="pie__caja__redessociales">
                 <a class="pie__caja__ruta" href="https://www.facebook.com/cristian.nasso"><img class="pie__caja__imagen"
@@ -196,18 +197,16 @@
                         class="pie__caja__imagen" src="./img/instagram.png" alt="Instagram"></a>
                 <a class="pie__caja__ruta" href="@"><img class="pie__caja__imagen" src="./img/twitter.png"
                         alt="Twitter"></a> <!--No tengo Twitter-->
-                <a class="pie__caja__ruta" href="https://www.linkedin.com/in/cristian-alejandro-nasso-21375720/"><img
-                        class="pie__caja__imagen" src="./img/linkedin.png" alt="Linkedin"></a>
+                <a class="pie__caja__ruta" href="https://www.linkedin.com/in/cristian-alejandro-nasso-21375720/"><img class="pie__caja__imagen" src="./img/linkedin.png" alt="Linkedin"></a>
             </div>
             <div>
                 <p class="pie__caja__texto">Cristian Alejandro Nasso. <br> Guayra 1810 Piso 5 Departamento C. <br>
-                    Capital Federal. Nuñez. Codigo Postal 1429. <br> cristiannasso2@gmail.com</p>
+                Capital Federal. Nuñez. Codigo Postal 1429. <br> cristiannasso2@gmail.com</p>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -5,19 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <title>Acerca de nosotros</title>
 </head>
 
 <body>
-
     <header> <!--Esto es el header-->
-        
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><img class="imagen_navbab" src="../img/patitas.png"
+                <a class="navbar-brand" href="../index.html"><img class="imagen_navbab animate__animated animate__rubberBand" src="../img/patitas.png"
                         alt="Patitas"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,28 +24,27 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html"><img src="../img/home.png" alt="Casa"> Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/nuestraraza.html">Nuestra raza</a>
+                            <a class="nav-link" href="../pages/nuestraraza.html"><img src="../img/dog.png" alt="Perro"> Nuestra raza</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                            <a class="nav-link" href="../pages/servicios.html"><img src="../img/briefcase.png" alt="Trabajo"> Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/acercadenosotros.html">Acerca de nosotros</a>
+                            <a class="nav-link" href="../pages/acercadenosotros.html"><img src="../img/heart.png" alt="Corazon"> Acerca de nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                            <a class="nav-link" href="../pages/contacto.html"><img src="../img/mensaje.png" alt="Mensaje"> Contacto</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-    <main class="cuerpo"> <!--Esto es el main-->
-        
+    
+    <main class="cuerpo"> <!--Esto es el main-->   
         <h2 class="cuerpo__titulo">Cumpleaños</h2>
         <section class="container-fluid"> <!--Aqui aplique bootstrap-->
         <div class="row justify-content-around">
@@ -90,6 +87,7 @@
 
         <h2 class="cuerpo__titulo">Paseos</h2>
         <section class="cuerpo__paseo">
+            <img class="cuerpo__paseo__imagen" src="../img/corazonizquierda.png" alt="Corazon">
             <div class="cuerpo__paseo__caja">
                 <img class="cuerpo__paseo__caja__imagen" src="../img/paseo.png" alt="Foto de paseo en familia">
                 <h3 class="cuerpo__paseo__caja__titulo">Paseo en los lagos de Regatas de Palermo</h3>
@@ -101,6 +99,7 @@
                     con ellos. Nuestro papa perruno lleva a Denzel y Noah. Nuestra mama perruna lleva a Amir y Yamil.
                 </p>
             </div>
+            <img class="cuerpo__paseo__imagen" src="../img/corazonderecha.png" alt="Corazon">
         </section>
 
         <h2 class="cuerpo__titulo">Festejos</h2>
@@ -173,8 +172,8 @@
         </section>
     </main>
 
-    <footer id="acceso" class="pie"> <!--Esto es el footer-->
-        
+    <footer class="pie"> <!--Esto es el footer-->
+
         <div class="pie__caja">
             <div class="pie__caja__redessociales">
                 <a class="pie__caja__ruta" href="https://www.facebook.com/cristian.nasso"><img class="pie__caja__imagen"
@@ -192,9 +191,7 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>

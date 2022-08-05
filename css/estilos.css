@@ -29,15 +29,17 @@
     margin: 4px;
     border-radius: 10px;
     border-style: solid;
-    font-size: x-large;
+    font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 3s;
+
 }
 
 /*Aqui aplique bootstrap*/
 
 .nav-link:hover {
     transform: rotateX(360deg);
+    background-color: rgb(35, 211, 35);
 }
 
 @media screen and (max-width: 1000px) {
@@ -66,8 +68,30 @@
 
 /*------------Esto es la seccion 2/5 del main------------*/
 
-.cuerpo__principal__caja__titulo {
-    font-size: 40px;
+.cuerpo__principal {
+    background-color: rgb(191, 83, 83);
+    border-radius: 50px;
+    border: solid green;
+    padding: 20px;
+    margin: 20px;
+}
+
+.cuerpo__principal:hover {
+    animation: presentacion 7s;
+}
+
+.cuerpo__principal__caja__flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.cuerpo__principal__caja__flex__imagen {
+    width: 15%;
+}
+
+.cuerpo__principal__caja__flex__titulo {
+    font-size: 50px;
     font-weight: 100;
     letter-spacing: 2px;
     line-height: 40px;
@@ -82,6 +106,45 @@
 .cuerpo__principal__caja__texto {
     text-align: center;
     margin-bottom: 10px;
+    color: black;
+}
+
+@keyframes presentacion {
+    0% {
+        background-color: rgba(189, 94, 50, 0.719);
+    }
+
+    25% {
+        background-color: rgba(51, 61, 107, 0.719);
+    }
+
+    50% {
+        background-color: aqua;
+    }
+
+    75% {
+        background-color: blueviolet;
+    }
+
+    100% {
+        background-color: rgb(191, 83, 83);
+    }
+}
+
+@media screen and (max-width: 1334px){
+    .cuerpo__principal__caja__flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuerpo__principal__caja__flex__imagen {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .cuerpo__principal__caja__flex__imagen {
+        width: 100%;
+    }
 }
 
 /*------------Esto es la seccion 3/5 del main------------*/
@@ -125,7 +188,13 @@
     color: blueviolet;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
-    margin: 10px;
+
+}
+
+.cuerpo__ellos__item__titulo::first-letter {
+    color: green;
+    font-size: 40px;
+    font-family: cursive;
 }
 
 .cuerpo__ellos__item__descripcion {
@@ -177,7 +246,33 @@
 .cuerpo__especial__titulo {
     text-align: center;
     margin: 70px 0px 50px 0px;
+    font-size: xx-large;
 }
+
+.cuerpo__especial__titulo:hover {
+    animation: especial 5s;
+}
+
+@keyframes especial {
+    0% {
+        color: black;
+    }
+    25% {
+        color: yellow;
+        font-size: x-large;
+    }
+    50% {
+        color: blue;
+        font-size: xx-large;
+    }
+    75% {
+        color: green;
+        font-size: x-large;
+    }
+    100% {
+        color: black;
+    }
+  }
 
 .cuerpo__especial__caja__izquierda__imagen {
     width: 50vw;
@@ -289,7 +384,24 @@
     width: 100px;
     height: 100px;
     margin: 10px;
+    transition-property: width height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0.5s;
 }
+
+.pie__caja__imagen:hover {
+    width: 120px;
+    height: 120px;
+    background-color: yellow;
+    border-radius: 100px;
+}
+
+
+
+
+
+
 
 .pie__caja {
     background-image: linear-gradient(to left, green, yellow, blue);
@@ -335,6 +447,23 @@
     border-style: double;
     margin: 0px 10px 20px 10px;
     border-radius: 30px;
+}
+
+.cuerpo__chihuahua__caja__imagen {
+    width: 25px;
+    height: 25px;
+    transition-property: width height;
+    transition-duration: 2s;
+    transition-timing-function: ease-in;
+    transition-delay: 1s;
+}
+
+.cuerpo__chihuahua__caja__imagen:hover {
+    width: 36px;
+    height: 36px;
+    background-color: yellow;
+    border-radius: 100%;
+    border: solid green;
 }
 
 .cuerpo__chihuahua__caja__titulo {
@@ -402,6 +531,7 @@
 
 .cuerpo__temperamento__caja__titulo {
     text-align: center;
+    font-size: large;
     margin-bottom: 15px;
     font-family: 'Lemon', cursive;
     color: rgb(216, 24, 97);
@@ -445,7 +575,7 @@
 .cuerpo__alimentacion__caja__titulo {
     text-align: center;
     margin-bottom: 15px;
-    font-family: 'Lemon', cursive;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(216, 126, 24);
 }
 
@@ -652,12 +782,47 @@
     height: 510px;
 }
 
+.card-text::selection {
+    background-color: blueviolet;
+}
+
 .cuerpo__paseo__caja {
-    background-color: rgb(205, 227, 255);
+    background-color: rgb(210, 188, 231);
     width: 450px;
+    height: 100%;
     margin: 20px;
     border-radius: 20px;
     border-style: groove;
+}
+
+.cuerpo__paseo__imagen {
+    width: 30%;
+}
+
+.cuerpo__paseo__imagen:hover{
+    animation: corazon 5s;
+}
+
+@keyframes corazon {
+    0% {
+        width: 30%;
+    }
+
+    25% {
+        width: 35%;
+    }
+
+    50% {
+        width: 30%;
+    }
+
+    75% {
+        width: 35%;
+    }
+
+    100% {
+        width: 30%;
+    }
 }
 
 .cuerpo__paseo__caja__imagen {
@@ -677,7 +842,48 @@
 
 .cuerpo__paseo {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1490px){
+    .cuerpo__paseo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cuerpo__paseo__imagen{
+        width: 70%;
+    }
+    .cuerpo__paseo__imagen:hover{
+        animation: corazon 5s;
+    }
+    
+    @keyframes corazon {
+        0% {
+            width: 70%;
+        }
+    
+        25% {
+            width: 75%;
+        }
+    
+        50% {
+            width: 70%;
+        }
+    
+        75% {
+            width: 75%;
+        }
+    
+        100% {
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .cuerpo__paseo__caja{
+        width: 92%;
+    }
 }
 
 .cuerpo__fiestas__caja {
@@ -771,8 +977,7 @@
 
     .cuerpo__todos__caja__imagen,
     .cuerpo__vacaciones__caja__imagen,
-    .cuerpo__fiestas__caja__imagen,
-    .cuerpo__paseo__caja__imagen {
+    .cuerpo__fiestas__caja__imagen {
         height: 300px;
     }
 }
@@ -789,6 +994,12 @@
     border: solid;
     padding: 5px;
     margin: 30px 0px 20px 0px;
+    transition-duration: 5s;
+}
+
+.form-label:hover {
+    background-color: yellow;
+    text-decoration: underline red;
 }
 
 /*Aqui aplique bootstrap*/
@@ -796,6 +1007,16 @@
 .form-control {
     background-color: rgb(143, 203, 161);
     border: solid;
+}
+
+.form-control:focus {
+    background-color: yellow;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    background-color: greenyellow;
+    color: black;
 }
 
 .cuerpo__mapa {
@@ -827,11 +1048,18 @@
 
 /*------------Esto es el main de servicios------------*/
 
-.cuerpo__servicios__caja__titulo {
+.cuerpo__servicios__caja__tituloh2 {
+    color: deeppink;
     text-decoration: underline;
     text-align: center;
     font-size: xx-large;
     padding: 20px;
+}
+
+.cuerpo__servicios__caja__tituloh3 {
+    text-align: center;
+    font-size: x-large;
+    padding: 70px 0px 10px 0px;
 }
 
 .cuerpo__servicios__caja__texto1 {
