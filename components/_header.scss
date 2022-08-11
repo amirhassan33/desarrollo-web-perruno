@@ -1,0 +1,40 @@
+@import "../base/variables";
+
+/*-------Este es el header-------*/
+
+header{
+    .navbar {
+        background-image: linear-gradient(to right, $color-naranja, $color-amarillo, $color-rojo);
+        div{
+            .imagen_navbar{
+                width: 100px;
+                height: 100px;
+                }
+            div{
+                ul{
+                    li{
+                        .nav-link{
+                            background-color: $color-violeta-azul;
+                            padding: 3px;
+                            margin: 4px;
+                            border-radius: 10px;
+                            border-style: solid;
+                            font-size: large;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                            transition: 3s;
+                            &:hover{
+                                transform: rotateX(360deg);
+                                background-color: rgb(35, 211, 35);
+                            }
+                        }
+                        @media screen and (max-width: 1000px) {
+                            .nav-link {
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

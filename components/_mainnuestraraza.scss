@@ -1,0 +1,444 @@
+@import "../base/variables";
+
+/*-------Este es la pagina nuestra raza-------*/
+
+.aplicar__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "cabeza cabeza cabeza"
+        "aside cuerpo cuerpo"
+        "pie pie pie"
+    ;
+    .aplicar__grid__cabeza{
+        grid-area: cabeza;
+    }
+    .aplicar__grid__cuerpo{
+        grid-area: cuerpo;
+        .cuerpo__chihuahua{
+            .cuerpo__chihuahua__caja{
+                padding: 80px;
+                border: 30px;
+                border-style: double;
+                margin: 0px 10px 20px 10px;
+                border-radius: 30px;
+                .cuerpo__chihuahua__caja__titulo{
+                    text-align: center;
+                    margin-bottom: 15px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    color: rgb(60, 88, 32);
+                }
+                .cuerpo__chihuahua__caja__imagen{
+                    width: 25px;
+                    height: 25px;
+                    transition-property: width height;
+                    transition-duration: 2s;
+                    transition-timing-function: ease-in;
+                    transition-delay: 1s;
+                    &:hover {
+                        width: 36px;
+                        height: 36px;
+                        background-color: $color-amarillo;
+                        border-radius: 100%;
+                        border: solid $color-verde;
+                    }
+                }
+                .cuerpo__chihuahua__caja__texto{
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                    color: rgba(33, 43, 43, 0.911);
+                }
+            }
+        }
+        .cuerpo__historia{
+            .cuerpo__historia__caja{
+                padding: 80px;
+                border: 30px;
+                border-style: double;
+                margin: 0px 10px 20px 10px;
+                border-radius: 30px;
+                .cuerpo__historia__caja__titulo{
+                    text-align: center;
+                    margin-bottom: 15px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    color: rgb(54, 42, 3);
+                }
+                .cuerpo__historia__caja__imagen{
+                    width: 25px;
+                    height: 25px;
+                    transition-property: width height;
+                    transition-duration: 2s;
+                    transition-timing-function: ease-in;
+                    transition-delay: 1s;
+                    &:hover {
+                        width: 36px;
+                        height: 36px;
+                        background-color: $color-amarillo;
+                        border-radius: 100%;
+                        border: solid $color-verde;
+                    }
+                }
+                .cuerpo__historia__caja__texto {
+                    text-align: center;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: rgba(165, 95, 16, 0.911);
+                }
+            }
+        }
+        .cuerpo__apariencia{
+            .cuerpo__apariencia__caja{
+                padding: 80px;
+                border: 30px;
+                border-style: double;
+                margin: 0px 10px 20px 10px;
+                border-radius: 30px;
+                .cuerpo__apariencia__caja__titulo{
+                    text-align: center;
+                    margin-bottom: 15px;
+                    font-family: 'Edu TAS Beginner', cursive;
+                    color: rgb(54, 13, 3);
+                }
+                .cuerpo__apariencia__caja__imagen{
+                    width: 25px;
+                    height: 25px;
+                    transition-property: width height;
+                    transition-duration: 2s;
+                    transition-timing-function: ease-in;
+                    transition-delay: 1s;
+                    &:hover {
+                        width: 36px;
+                        height: 36px;
+                        background-color: $color-amarillo;
+                        border-radius: 100%;
+                        border: solid $color-verde;
+                    }
+                }
+                .cuerpo__apariencia__caja__texto{
+                    text-align: center;
+                    font-family: 'Dosis', sans-serif;
+                    color: rgba(16, 165, 23, 0.911);
+                }
+            }
+        }
+        .cuerpo__temperamento{
+            .cuerpo__temperamento__caja{
+                padding: 80px;
+                border: 30px;
+                border-style: double;
+                margin: 0px 10px 20px 10px;
+                border-radius: 30px;
+                .cuerpo__temperamento__caja__titulo{
+                    text-align: center;
+                    font-size: large;
+                    margin-bottom: 15px;
+                    font-family: 'Lemon', cursive;
+                    color: rgb(216, 24, 97);
+                }
+                .cuerpo__temperamento__caja__imagen{
+                    width: 25px;
+                    height: 25px;
+                    transition-property: width height;
+                    transition-duration: 2s;
+                    transition-timing-function: ease-in;
+                    transition-delay: 1s;
+                    &:hover {
+                        width: 36px;
+                        height: 36px;
+                        background-color: $color-amarillo;
+                        border-radius: 100%;
+                        border: solid $color-verde;
+                    }
+                }
+                .cuerpo__temperamento__caja__texto{
+                    text-align: center;
+                    font-family: 'Prompt', sans-serif;
+                    color: rgba(94, 69, 90, 0.911);
+                }
+            }
+        }
+        .cuerpo__salud{
+            .cuerpo__salud__caja{
+                padding: 80px;
+                border: 30px;
+                border-style: double;
+                margin: 0px 10px 20px 10px;
+                border-radius: 30px;
+                .cuerpo__salud__caja__titulo{
+                    text-align: center;
+                    margin-bottom: 15px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    color: rgb(59, 24, 216);
+                }
+                .cuerpo__salud__caja__imagen{
+                    width: 25px;
+                    height: 25px;
+                    transition-property: width height;
+                    transition-duration: 2s;
+                    transition-timing-function: ease-in;
+                    transition-delay: 1s;
+                    &:hover {
+                        width: 36px;
+                        height: 36px;
+                        background-color: $color-amarillo;
+                        border-radius: 100%;
+                        border: solid $color-verde;
+                    }
+                }
+                .cuerpo__salud__caja__texto{
+                    text-align: center;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    color: rgba(69, 75, 94, 0.911);
+                }
+            }
+        }
+        .cuerpo__alimentacion{
+            .cuerpo__alimentacion__caja{
+                padding: 80px;
+                border: 30px;
+                border-style: double;
+                margin: 0px 10px 20px 10px;
+                border-radius: 30px;
+                .cuerpo__alimentacion__caja__titulo{
+                    text-align: center;
+                    margin-bottom: 15px;
+                    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                    color: rgb(216, 126, 24);
+                }
+                .cuerpo__alimentacion__caja__imagen{
+                    width: 25px;
+                    height: 25px;
+                    transition-property: width height;
+                    transition-duration: 2s;
+                    transition-timing-function: ease-in;
+                    transition-delay: 1s;
+                    &:hover {
+                        width: 36px;
+                        height: 36px;
+                        background-color: $color-amarillo;
+                        border-radius: 100%;
+                        border: solid $color-verde;
+                    }
+                }
+                .cuerpo__alimentacion__caja__texto{
+                    text-align: center;
+                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                    color: rgba(69, 69, 94, 0.911);
+                }
+            }
+        }
+        .cuerpo__gestacionyparto{
+            .cuerpo__gestacionyparto__caja{
+                padding: 80px;
+                border: 30px;
+                border-style: double;
+                margin: 0px 10px 20px 10px;
+                border-radius: 30px;
+                .cuerpo__gestacionyparto__caja__titulo{
+                    text-align: center;
+                    margin-bottom: 15px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    color: rgb(29, 13, 19);
+                }
+                .cuerpo__gestacionyparto__caja__imagen{
+                    width: 25px;
+                    height: 25px;
+                    transition-property: width height;
+                    transition-duration: 2s;
+                    transition-timing-function: ease-in;
+                    transition-delay: 1s;
+                    &:hover {
+                        width: 36px;
+                        height: 36px;
+                        background-color: $color-amarillo;
+                        border-radius: 100%;
+                        border: solid $color-verde;
+                    }
+                }
+                .cuerpo__gestacionyparto__caja__texto{
+                    text-align: center;
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                    color: rgba(14, 1, 11, 0.911);
+                }
+            }
+        }
+    }
+    .aplicar__grid__aside{
+        grid-area: aside;
+        .aplicar__grid__aside__section{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            background-image: linear-gradient(to top, $color-naranja, rgb(27, 179, 27), $color-coral);
+            .aplicar__grid__aside__section__caja1{
+                width: 370px;
+            height: 1150px;
+            border: outset rgb(238, 255, 0) 20px;
+            background-color: $color-aqua-marine;
+                .aplicar__grid__aside__section__caja1__titulo1{
+                    color: $color-azul;
+                    background-color: $color-monasterio;
+                    text-align: center;
+                }
+                .aplicar__grid__aside__section__caja1__imagen1{
+                    width: 100%;
+                }
+            }
+            @media screen and (max-width: 1007px) {        
+                .aplicar__margen {
+                    margin: 20px;
+                }
+            }
+        }
+        .aplicar__grid__aside__section__caja2{
+            width: 240px;
+            height: 210px;
+            border: outset rgb(0, 4, 255) 15px;
+            background-color: $color-aqua-marine;
+            .aplicar__grid__aside__section__caja2__imagen2{
+                width: 100%;
+            }
+            .aplicar__grid__aside__section__caja2__texto2{
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(128, 9, 128);
+            }
+        }
+        @media screen and (max-width: 1007px) {        
+            .aplicar__margen {
+                margin: 20px;
+            }
+        }
+        .aplicar__grid__aside__section__caja3{
+            width: 340px;
+            height: 350px;
+            border: outset $color-rojo 15px;
+            background-color: $color-aqua-marine;
+            .aplicar__grid__aside__section__caja3__imagen3{
+                width: 100%;
+            }
+            .aplicar__grid__aside__section__caja3__texto3{
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(128, 9, 128);
+            }
+        }
+        @media screen and (max-width: 1007px) {        
+            .aplicar__margen {
+                margin: 20px;
+            }
+        }
+        .aplicar__grid__aside__section__caja4{
+            width: 400px;
+            height: 450px;
+            border: outset rgb(255, 0, 81) 15px;
+            background-color: $color-aqua-marine;
+            .aplicar__grid__aside__section__caja4__imagen4{
+                width: 100%;
+            }
+            .aplicar__grid__aside__section__caja4__texto4{
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(128, 9, 128);
+            }
+        }
+        @media screen and (max-width: 1007px) {        
+            .aplicar__margen {
+                margin: 20px;
+            }
+        }
+        .aplicar__grid__aside__section__caja5{
+            width: 380px;
+            height: 360px;
+            border: outset rgb(255, 170, 0) 15px;
+            background-color: $color-aqua-marine;
+            .aplicar__grid__aside__section__caja5__imagen5{
+                width: 100%;
+            }
+            .aplicar__grid__aside__section__caja5__texto5{
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(128, 9, 128);
+            }
+        }
+        @media screen and (max-width: 1007px) {        
+            .aplicar__margen {
+                margin: 20px;
+            }
+        }
+        .aplicar__grid__aside__section__caja6{
+            width: 380px;
+            height: 600px;
+            border: outset rgb(0, 110, 255) 15px;
+            background-color: $color-aqua-marine;
+            .aplicar__grid__aside__section__caja6__imagen6{
+                width: 100%;
+            }
+            .aplicar__grid__aside__section__caja6__texto6{
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(128, 9, 128);
+            }
+        }
+        @media screen and (max-width: 1007px) {        
+            .aplicar__margen {
+                margin: 20px;
+            }
+        }
+        .aplicar__grid__aside__section__caja7{
+            width: 350px;
+            height: 380px;
+            border: outset rgb(221, 0, 255) 15px;
+            background-color: $color-aqua-marine;
+            .aplicar__grid__aside__section__caja7__imagen7{
+                width: 100%;
+            }
+            .aplicar__grid__aside__section__caja7__texto7{
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(128, 9, 128);
+            }
+        }
+        @media screen and (max-width: 1007px) {        
+            .aplicar__margen {
+                margin: 20px;
+            }
+        }
+        .aplicar__grid__aside__section__caja8{
+            width: 380px;
+            height: 550px;
+            border: outset rgb(255, 0, 0) 15px;
+            background-color: $color-aqua-marine;
+            .aplicar__grid__aside__section__caja8__imagen8{
+                width: 100%;
+            }
+            .aplicar__grid__aside__section__caja8__texto8{
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: rgb(128, 9, 128);
+            }
+        }
+        @media screen and (max-width: 1007px) {        
+            .aplicar__margen {
+                margin: 20px;
+            }
+        }
+    }
+    .aplicar__grid__pie{
+        grid-area: pie;
+    }
+}
+@media screen and (max-width: 1007px) {
+    .aplicar__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "cabeza"
+            "cuerpo"
+            "aside"
+            "pie"
+        ;
+    }
+}

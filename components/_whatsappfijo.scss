@@ -1,0 +1,29 @@
+/*-------Este es el whats app fijo que esta en todas las paginas-------*/
+
+.cuerpo__icono{
+    .cuerpo__icono__position{
+        .cuerpo__icono__position__link{
+            .cuerpo__icono__position__imagen{
+                width: 100px;
+                height: 100px;
+                position: fixed;
+                bottom: 150px;
+                right: 30px;
+                transition-property: width height;
+                transition-duration: 3s;
+                transition-timing-function: ease-in-out;
+                transition-delay: 0.5s;
+                &:hover {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .cuerpo__icono__position__imagen {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}

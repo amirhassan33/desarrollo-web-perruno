@@ -1,0 +1,62 @@
+@import "../base/variables";
+
+/*-------Este es la pagina contacto-------*/
+
+main{
+    section{
+        form{
+            div{
+                .form-label {
+                    color: $color-violeta-azul;
+                    font-size: x-large;
+                    background-color: $color-coral;
+                    border-radius: 10px;
+                    border: solid;
+                    padding: 5px;
+                    margin: 30px 0px 20px 0px;
+                    transition-duration: 5s;
+                    &:hover {
+                        background-color: $color-amarillo;
+                        text-decoration: underline $color-rojo;
+                    }
+                }
+                .form-control {
+                    background-color: rgb(143, 203, 161);
+                    border: solid;
+                    &:focus {
+                        background-color: $color-amarillo;
+                        border-radius: 15px;
+                    }
+                }
+            }
+            div{
+                .btn:hover{
+                    background-color: $color-amarillo-verde;
+                    color: $color-negro;
+                }
+            }
+        }
+    }
+    .cuerpo__mapa{
+        padding: 30px;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width: 520px) {
+            .cuerpo__mapa__mapa {
+                width: 100%;
+            }
+            .cuerpo__mapa__imagen1 {
+                width: 100%;
+            }
+            .cuerpo__mapa__imagen2 {
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 1480px) {
+        .cuerpo__mapa {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
