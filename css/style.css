@@ -34,6 +34,15 @@ header .navbar {
   background-repeat: no-repeat;
   background-attachment: fixed; }
 
+.cuerpo__principal .cuerpo__principal__caja .cuerpo__principal__caja__flex, .aplicar__grid .aplicar__grid__aside .aplicar__grid__aside__section, .cuerpo__video, .cuerpo__fiestas, .cuerpo__todos {
+  display: flex;
+  justify-content: space-around; }
+
+.aplicar__grid .aplicar__grid__cuerpo .cuerpo__chihuahua .cuerpo__chihuahua__caja .cuerpo__chihuahua__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__historia .cuerpo__historia__caja .cuerpo__historia__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__apariencia .cuerpo__apariencia__caja .cuerpo__apariencia__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__temperamento .cuerpo__temperamento__caja .cuerpo__temperamento__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__salud .cuerpo__salud__caja .cuerpo__salud__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__alimentacion .cuerpo__alimentacion__caja .cuerpo__alimentacion__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__gestacionyparto .cuerpo__gestacionyparto__caja .cuerpo__gestacionyparto__caja__imagen:hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%; }
+
 /*-------Este es la pagina inicio-------*/
 @media screen and (max-width: 500px) {
   .text {
@@ -60,8 +69,6 @@ header .navbar {
   100% {
     background-color: #bf5353; } }
   .cuerpo__principal .cuerpo__principal__caja .cuerpo__principal__caja__flex {
-    display: flex;
-    justify-content: space-around;
     padding: 30px; }
     .cuerpo__principal .cuerpo__principal__caja .cuerpo__principal__caja__flex .cuerpo__principal__caja__flex__imagen {
       width: 15%; }
@@ -215,8 +222,8 @@ header .navbar {
 .cuerpo__especial .cuerpo__especial__caja__derecha {
   background-image: radial-gradient(#f2ff00, pink, orange);
   border-style: solid;
-  height: 1100px;
   width: 50%;
+  height: 1100px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   display: flex;
@@ -253,6 +260,15 @@ header .navbar {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px; } }
 
+.cuerpo__principal .cuerpo__principal__caja .cuerpo__principal__caja__flex, .aplicar__grid .aplicar__grid__aside .aplicar__grid__aside__section, .cuerpo__video, .cuerpo__fiestas, .cuerpo__todos {
+  display: flex;
+  justify-content: space-around; }
+
+.aplicar__grid .aplicar__grid__cuerpo .cuerpo__chihuahua .cuerpo__chihuahua__caja .cuerpo__chihuahua__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__historia .cuerpo__historia__caja .cuerpo__historia__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__apariencia .cuerpo__apariencia__caja .cuerpo__apariencia__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__temperamento .cuerpo__temperamento__caja .cuerpo__temperamento__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__salud .cuerpo__salud__caja .cuerpo__salud__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__alimentacion .cuerpo__alimentacion__caja .cuerpo__alimentacion__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__gestacionyparto .cuerpo__gestacionyparto__caja .cuerpo__gestacionyparto__caja__imagen:hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%; }
+
 /*-------Este es la pagina nuestra raza-------*/
 .aplicar__grid {
   display: grid;
@@ -282,10 +298,7 @@ header .navbar {
         transition-timing-function: ease-in;
         transition-delay: 1s; }
         .aplicar__grid .aplicar__grid__cuerpo .cuerpo__chihuahua .cuerpo__chihuahua__caja .cuerpo__chihuahua__caja__imagen:hover {
-          width: 36px;
-          height: 36px;
           background-color: yellow;
-          border-radius: 100%;
           border: solid green; }
       .aplicar__grid .aplicar__grid__cuerpo .cuerpo__chihuahua .cuerpo__chihuahua__caja .cuerpo__chihuahua__caja__texto {
         text-align: center;
@@ -310,10 +323,7 @@ header .navbar {
         transition-timing-function: ease-in;
         transition-delay: 1s; }
         .aplicar__grid .aplicar__grid__cuerpo .cuerpo__historia .cuerpo__historia__caja .cuerpo__historia__caja__imagen:hover {
-          width: 36px;
-          height: 36px;
           background-color: yellow;
-          border-radius: 100%;
           border: solid green; }
       .aplicar__grid .aplicar__grid__cuerpo .cuerpo__historia .cuerpo__historia__caja .cuerpo__historia__caja__texto {
         text-align: center;
@@ -338,10 +348,7 @@ header .navbar {
         transition-timing-function: ease-in;
         transition-delay: 1s; }
         .aplicar__grid .aplicar__grid__cuerpo .cuerpo__apariencia .cuerpo__apariencia__caja .cuerpo__apariencia__caja__imagen:hover {
-          width: 36px;
-          height: 36px;
           background-color: yellow;
-          border-radius: 100%;
           border: solid green; }
       .aplicar__grid .aplicar__grid__cuerpo .cuerpo__apariencia .cuerpo__apariencia__caja .cuerpo__apariencia__caja__texto {
         text-align: center;
@@ -367,10 +374,7 @@ header .navbar {
         transition-timing-function: ease-in;
         transition-delay: 1s; }
         .aplicar__grid .aplicar__grid__cuerpo .cuerpo__temperamento .cuerpo__temperamento__caja .cuerpo__temperamento__caja__imagen:hover {
-          width: 36px;
-          height: 36px;
           background-color: yellow;
-          border-radius: 100%;
           border: solid green; }
       .aplicar__grid .aplicar__grid__cuerpo .cuerpo__temperamento .cuerpo__temperamento__caja .cuerpo__temperamento__caja__texto {
         text-align: center;
@@ -395,10 +399,7 @@ header .navbar {
         transition-timing-function: ease-in;
         transition-delay: 1s; }
         .aplicar__grid .aplicar__grid__cuerpo .cuerpo__salud .cuerpo__salud__caja .cuerpo__salud__caja__imagen:hover {
-          width: 36px;
-          height: 36px;
           background-color: yellow;
-          border-radius: 100%;
           border: solid green; }
       .aplicar__grid .aplicar__grid__cuerpo .cuerpo__salud .cuerpo__salud__caja .cuerpo__salud__caja__texto {
         text-align: center;
@@ -423,10 +424,7 @@ header .navbar {
         transition-timing-function: ease-in;
         transition-delay: 1s; }
         .aplicar__grid .aplicar__grid__cuerpo .cuerpo__alimentacion .cuerpo__alimentacion__caja .cuerpo__alimentacion__caja__imagen:hover {
-          width: 36px;
-          height: 36px;
           background-color: yellow;
-          border-radius: 100%;
           border: solid green; }
       .aplicar__grid .aplicar__grid__cuerpo .cuerpo__alimentacion .cuerpo__alimentacion__caja .cuerpo__alimentacion__caja__texto {
         text-align: center;
@@ -451,10 +449,7 @@ header .navbar {
         transition-timing-function: ease-in;
         transition-delay: 1s; }
         .aplicar__grid .aplicar__grid__cuerpo .cuerpo__gestacionyparto .cuerpo__gestacionyparto__caja .cuerpo__gestacionyparto__caja__imagen:hover {
-          width: 36px;
-          height: 36px;
           background-color: yellow;
-          border-radius: 100%;
           border: solid green; }
       .aplicar__grid .aplicar__grid__cuerpo .cuerpo__gestacionyparto .cuerpo__gestacionyparto__caja .cuerpo__gestacionyparto__caja__texto {
         text-align: center;
@@ -463,9 +458,7 @@ header .navbar {
   .aplicar__grid .aplicar__grid__aside {
     grid-area: aside; }
     .aplicar__grid .aplicar__grid__aside .aplicar__grid__aside__section {
-      display: flex;
       flex-direction: column;
-      justify-content: space-around;
       align-items: center;
       height: 100%;
       background-image: linear-gradient(to top, orange, #1bb31b, coral); }
@@ -590,6 +583,15 @@ header .navbar {
     grid-template-rows: auto;
     grid-template-areas: "cabeza" "cuerpo" "aside" "pie"; } }
 
+.cuerpo__principal .cuerpo__principal__caja .cuerpo__principal__caja__flex, .aplicar__grid .aplicar__grid__aside .aplicar__grid__aside__section, .cuerpo__video, .cuerpo__fiestas, .cuerpo__todos {
+  display: flex;
+  justify-content: space-around; }
+
+.aplicar__grid .aplicar__grid__cuerpo .cuerpo__chihuahua .cuerpo__chihuahua__caja .cuerpo__chihuahua__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__historia .cuerpo__historia__caja .cuerpo__historia__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__apariencia .cuerpo__apariencia__caja .cuerpo__apariencia__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__temperamento .cuerpo__temperamento__caja .cuerpo__temperamento__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__salud .cuerpo__salud__caja .cuerpo__salud__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__alimentacion .cuerpo__alimentacion__caja .cuerpo__alimentacion__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__gestacionyparto .cuerpo__gestacionyparto__caja .cuerpo__gestacionyparto__caja__imagen:hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%; }
+
 /*-------Este es la pagina servicios-------*/
 .cuerpo__servicios .cuerpo__servicios__caja {
   padding: 30px; }
@@ -655,19 +657,18 @@ header .navbar {
   border-style: double;
   font-size: large; }
 
-.cuerpo__video {
-  display: flex;
-  justify-content: space-around; }
+.cuerpo__video .cuerpo__video__tysuby-djbobo {
+  padding: 0px 20px 40px 20px; }
+
+@media screen and (max-width: 970px) {
   .cuerpo__video .cuerpo__video__tysuby-djbobo {
-    padding: 0px 20px 40px 20px; }
-  @media screen and (max-width: 970px) {
-    .cuerpo__video .cuerpo__video__tysuby-djbobo {
-      width: 40%;
-      height: 100%; } }
-  @media screen and (max-width: 612px) {
-    .cuerpo__video .cuerpo__video__tysuby-djbobo {
-      width: 70%;
-      height: 100%; } }
+    width: 40%;
+    height: 100%; } }
+
+@media screen and (max-width: 612px) {
+  .cuerpo__video .cuerpo__video__tysuby-djbobo {
+    width: 70%;
+    height: 100%; } }
 
 @media screen and (max-width: 1600px) {
   .cuerpo__video {
@@ -681,6 +682,15 @@ header .navbar {
 @media screen and (max-width: 612px) {
   .cuerpo__video {
     flex-direction: column; } }
+
+.cuerpo__principal .cuerpo__principal__caja .cuerpo__principal__caja__flex, .aplicar__grid .aplicar__grid__aside .aplicar__grid__aside__section, .cuerpo__video, .cuerpo__fiestas, .cuerpo__todos {
+  display: flex;
+  justify-content: space-around; }
+
+.aplicar__grid .aplicar__grid__cuerpo .cuerpo__chihuahua .cuerpo__chihuahua__caja .cuerpo__chihuahua__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__historia .cuerpo__historia__caja .cuerpo__historia__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__apariencia .cuerpo__apariencia__caja .cuerpo__apariencia__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__temperamento .cuerpo__temperamento__caja .cuerpo__temperamento__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__salud .cuerpo__salud__caja .cuerpo__salud__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__alimentacion .cuerpo__alimentacion__caja .cuerpo__alimentacion__caja__imagen:hover, .aplicar__grid .aplicar__grid__cuerpo .cuerpo__gestacionyparto .cuerpo__gestacionyparto__caja .cuerpo__gestacionyparto__caja__imagen:hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%; }
 
 /*-------Este es la pagina acerca de nosotros-------*/
 .cuerpo__titulo {
@@ -735,10 +745,10 @@ div .card__bootstrap {
   .cuerpo__paseo .cuerpo__paseo__caja {
     background-color: #d2bce7;
     width: 450px;
-    height: 100%;
     margin: 20px;
     border-radius: 20px;
-    border-style: groove; }
+    border-style: groove;
+    height: 100%; }
     .cuerpo__paseo .cuerpo__paseo__caja .cuerpo__paseo__caja__imagen {
       width: 100%;
       height: 400px;
@@ -758,8 +768,6 @@ div .card__bootstrap {
     align-items: center; } }
 
 .cuerpo__fiestas {
-  display: flex;
-  justify-content: space-around;
   flex-wrap: wrap; }
   .cuerpo__fiestas .cuerpo__fiestas__caja {
     background-color: #e7cdff;
@@ -804,8 +812,6 @@ div .card__bootstrap {
       padding: 10px; }
 
 .cuerpo__todos {
-  display: flex;
-  justify-content: space-around;
   flex-wrap: wrap; }
   .cuerpo__todos .cuerpo__todos__caja {
     background-color: #ffd7cd;

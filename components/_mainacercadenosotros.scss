@@ -1,10 +1,12 @@
 @import "../base/variables";
+@import "../base/extends";
+@import "../base/mixins";
 
 /*-------Este es la pagina acerca de nosotros-------*/
 
 .cuerpo__titulo{
     text-align: center;
-    color: $color-violeta-claro;
+    color: nth($color, 7);
     padding-top: 40px;
     font-size: xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -16,8 +18,8 @@ div{
         height: 510px;
         .card-body{
             .card-text::selection {
-                background-color: $color-violeta-azul;
-            }            
+                background-color: nth($color, 6);
+            }
         }
     }
 }
@@ -73,15 +75,10 @@ div{
         }
     }
     .cuerpo__paseo__caja{
-        background-color: rgb(210, 188, 231);
-        width: 450px;
+        @include tarjeta (rgb(210, 188, 231), 450px, 20px, 20px, groove);
         height: 100%;
-        margin: 20px;
-        border-radius: 20px;
-        border-style: groove;
         .cuerpo__paseo__caja__imagen{
-            width: 100%;
-            height: 400px;
+            @include ancho-largo (100%,400px);
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
@@ -105,18 +102,12 @@ div{
     }
 }
 .cuerpo__fiestas{
-    display: flex;
-    justify-content: space-around;
+    @extend %flex;
     flex-wrap: wrap;
     .cuerpo__fiestas__caja{
-        background-color: rgb(231, 205, 255);
-        width: 450px;
-        margin: 20px;
-        border-radius: 20px;
-        border-style: groove;
+        @include tarjeta (rgb(231, 205, 255), 450px, 20px, 20px, groove);
         .cuerpo__fiestas__caja__imagen{
-            width: 100%;
-            height: 400px;
+            @include ancho-largo (100%,400px);
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
@@ -138,14 +129,9 @@ div{
     justify-content: center;
     flex-wrap: wrap;
     .cuerpo__vacaciones__caja{
-        background-color: rgb(255, 205, 251);
-        width: 500px;
-        margin: 20px;
-        border-radius: 20px;
-        border-style: groove;
+        @include tarjeta (rgb(255, 205, 251), 500px, 20px, 20px, groove);
         .cuerpo__vacaciones__caja__imagen{
-            width: 100%;
-            height: 400px;
+            @include ancho-largo (100%,400px);
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
@@ -163,18 +149,12 @@ div{
     }
 }
 .cuerpo__todos{
-    display: flex;
-    justify-content: space-around;
+    @extend %flex;
     flex-wrap: wrap;
     .cuerpo__todos__caja{
-        background-color: rgb(255, 215, 205);
-        width: 500px;
-        margin: 20px;
-        border-radius: 20px;
-        border-style: groove;
+        @include tarjeta (rgb(255, 215, 205), 500px, 20px, 20px, groove);
         .cuerpo__todos__caja__imagen{
-            width: 100%;
-            height: 500px;
+            @include ancho-largo (100%,500px);
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }

@@ -1,4 +1,6 @@
 @import "../base/variables";
+@import "../base/extends";
+@import "../base/mixins";
 
 /*-------Este es la pagina servicios-------*/
 
@@ -6,7 +8,7 @@
     .cuerpo__servicios__caja{
         padding: 30px;
         .cuerpo__servicios__caja__tituloh2{
-            color: $color-rosa-profundo;
+            color: nth($color, 16);
             text-decoration: underline;
             text-align: center;
             font-size: xx-large;
@@ -51,23 +53,23 @@
             @keyframes visitanos {
                 0% {
                     background-color: rgba(27, 61, 214, 0.719);
-                    color: $color-negro;
+                    color: nth($color, 9);
                 }
                 25% {
                     background-color: rgba(51, 61, 107, 0.719);
-                    color: $color-amarillo;
+                    color: nth($color, 2);
                 }
                 50% {
-                    background-color: $color-aqua;
-                    color: $color-violeta-azul;
+                    background-color: nth($color, 11);
+                    color: nth($color, 6);
                 }
                 75% {
-                    background-color: $color-violeta-azul;
-                    color: $color-aqua;
+                    background-color: nth($color, 6);
+                    color: nth($color, 11);
                 }
                 100% {
                     background-color: rgba(27, 61, 214, 0.719);
-                    color: $color-negro;
+                    color: nth($color, 9);
                 }
             }
         }
@@ -80,21 +82,18 @@
     font-size: large;
 }
 .cuerpo__video{
-    display: flex;
-    justify-content: space-around;
+    @extend %flex;
     .cuerpo__video__tysuby-djbobo{
         padding: 0px 20px 40px 20px;
     }
     @media screen and (max-width: 970px) {
         .cuerpo__video__tysuby-djbobo{
-            width: 40%;
-            height: 100%;
+            @include ancho-largo (40%,100%);
         }
     }
     @media screen and (max-width: 612px) {
         .cuerpo__video__tysuby-djbobo{
-            width: 70%;
-            height: 100%;
+            @include ancho-largo (70%,100%);
         }
     }
 }

@@ -1,20 +1,21 @@
 @import "../base/variables";
+@import "../base/mapas";
+@import "../base/mixins";
 
 /*-------Este es el header-------*/
 
 header{
     .navbar {
-        background-image: linear-gradient(to right, $color-naranja, $color-amarillo, $color-rojo);
+        background-image: linear-gradient(to right, nth($color, 4), nth($color, 2), nth($color, 5));
         div{
             .imagen_navbar{
-                width: 100px;
-                height: 100px;
+                @include ancho-largo (100px,100px);
                 }
             div{
                 ul{
                     li{
                         .nav-link{
-                            background-color: $color-violeta-azul;
+                            background-color: nth($color, 6);
                             padding: 3px;
                             margin: 4px;
                             border-radius: 10px;
@@ -29,7 +30,7 @@ header{
                         }
                         @media screen and (max-width: 1000px) {
                             .nav-link {
-                                text-align: center;
+                                text-align: map-get($contenido-cuadro, posicion-texto);
                             }
                         }
                     }

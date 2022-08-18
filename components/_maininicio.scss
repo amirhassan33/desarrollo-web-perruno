@@ -1,4 +1,6 @@
 @import "../base/variables";
+@import "../base/extends";
+@import "../base/mixins";
 
 /*-------Este es la pagina inicio-------*/
 
@@ -11,7 +13,7 @@
 .cuerpo__principal {
     background-color: rgb(191, 83, 83);
     border-radius: 50px;
-    border: solid $color-verde;
+    border: solid nth($color, 1);
     padding: 20px;
     margin: 20px;
     &:hover {
@@ -25,10 +27,10 @@
             background-color: rgba(51, 61, 107, 0.719);
         }
         50% {
-            background-color: $color-aqua;
+            background-color: nth($color, 11);
         }
         75% {
-            background-color: $color-violeta-azul;
+            background-color: nth($color, 6);
         }
         100% {
             background-color: rgb(191, 83, 83);
@@ -36,8 +38,7 @@
     }
     .cuerpo__principal__caja{
         .cuerpo__principal__caja__flex {
-            display: flex;
-            justify-content: space-around;
+            @extend %flex;
             padding: 30px;
             .cuerpo__principal__caja__flex__imagen {
                 width: 15%;
@@ -61,7 +62,7 @@
                 text-align: center;
                 text-decoration: dotted;
                 font-family: 'Splash', cursive;
-                color: $color-negro;
+                color: nth($color, 9);
                 margin: 120px 0px 80px 0px;
             }
         }
@@ -74,7 +75,7 @@
         .cuerpo__principal__caja__texto {
             text-align: center;
             margin-bottom: 10px;
-            color: $color-negro;
+            color: nth($color, 9);
         }
     }
 }
@@ -103,14 +104,14 @@
     }
     .cuerpo__ellos__itemcaja{
         border: solid;
-        border-color: $color-azul;
+        border-color: nth($color, 3);
         border-radius: 25px;
         height: 100%;
         transition: 2s;
         &:hover {
             height: 90%;
-            background-color: $color-aqua-marine;
-            color: $color-naranja-oscuro;
+            background-color: nth($color, 12);
+            color: nth($color, 13);
         }        
     }
     .cuerpo__ellos__item3,
@@ -125,11 +126,11 @@
         }
         .cuerpo__ellos__item__titulo{
             text-align: center;
-            color: $color-violeta-azul;
+            color: nth($color, 6);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: x-large;
             &::first-letter {
-                color: $color-verde;
+                color: nth($color, 1);
                 font-size: 40px;
                 font-family: cursive;
             }
@@ -176,22 +177,22 @@
         }
         @keyframes especial {
             0% {
-                color: $color-negro;
+                color: nth($color, 9);
             }
             25% {
-                color: $color-amarillo;
+                color: nth($color, 2);
                 font-size: x-large;
             }
             50% {
-                color: $color-azul;
+                color: nth($color, 3);
                 font-size: xx-large;
             }
             75% {
-                color: $color-verde;
+                color: nth($color, 1);
                 font-size: x-large;
             }
             100% {
-                color: $color-negro;
+                color: nth($color, 9);
             }
         }
     }
@@ -224,10 +225,9 @@
         }
     }
         .cuerpo__especial__caja__derecha{
-            background-image: radial-gradient(rgb(242, 255, 0), $color-rosa, $color-naranja);
+            background-image: radial-gradient(rgb(242, 255, 0), nth($color, 14), nth($color, 4));
             border-style: solid;
-            height: 1100px;
-            width: 50%;
+            @include ancho-largo (50%,1100px);
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             display: flex;
@@ -235,13 +235,11 @@
             align-items: center;
             justify-content: center;
             .cuerpo__especial__caja__derecha__imagen{
-                width: 500px;
-                height: 500px;
+                @include ancho-largo (500px,500px);
             }
             @media screen and (max-width: 484px) {
                 .cuerpo__especial__caja__derecha__imagen {
-                    width: 300px;
-                    height: 300px;
+                    @include ancho-largo (300px,300px);
                 }
             }
             .cuerpo__especial__caja__derecha__texto{
@@ -259,8 +257,8 @@
                 border-radius: 10px;
                 transition: 3s;
                 &:hover {
-                    background-color: $color-aqua;
-                    color: $color-verde;
+                    background-color: nth($color, 11);
+                    color: nth($color, 1);
                 }
             }
         }
