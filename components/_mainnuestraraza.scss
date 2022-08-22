@@ -20,6 +20,7 @@
     .aplicar__grid__cuerpo{
         grid-area: cuerpo;
         .cuerpo__chihuahua{
+            margin-top: 20px;
             .cuerpo__chihuahua__caja{
                 padding: map-get($cuadro, relleno-cuadro);
                 border: map-get($cuadro, borde-ancho);

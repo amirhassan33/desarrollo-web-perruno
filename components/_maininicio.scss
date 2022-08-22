@@ -43,12 +43,12 @@
             .cuerpo__principal__caja__flex__imagen {
                 width: 15%;
             }
-            @media screen and (max-width: 1334px){
+            @media screen and (max-width: 1334px) {
                 .cuerpo__principal__caja__flex__imagen {
                     width: 50%;
                 }
             }
-            @media screen and (max-width: 768px){
+            @media screen and (max-width: 768px) {
                 .cuerpo__principal__caja__flex__imagen {
                     width: 100%;
                 }
@@ -66,16 +66,32 @@
                 margin: 120px 0px 80px 0px;
             }
         }
-        @media screen and (max-width: 1334px){
+        @media screen and (max-width: 1334px) {
             .cuerpo__principal__caja__flex {
                 flex-direction: column;
                 align-items: center;
             }
         }
-        .cuerpo__principal__caja__texto {
-            text-align: center;
-            margin-bottom: 10px;
-            color: nth($color, 9);
+        .cuerpo__principal__caja__texto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .cuerpo__principal__caja__texto__descripcion {
+                text-align: center;
+                margin-bottom: 10px;
+                color: nth($color, 9);
+            }
+            .cuerpo__principal__caja__texto__boton {
+                text-decoration: none;
+                margin: 10px 0px 50px 0px;
+                padding: 20px;
+                border: solid 3px green;
+                background-image: linear-gradient(to right, #ec77ab 0%, #7873f5 100%);
+                border-radius: 50%;
+                color: black;
+                text-align: center;
+                font-size: large;
+            }
         }
     }
 }
@@ -170,7 +186,7 @@
 .cuerpo__especial{
     .cuerpo__especial__titulo{
         text-align: center;
-        margin: 70px 0px 50px 0px;
+        margin: 70px 0px 20px 0px;
         font-size: xx-large;
         &:hover{
             animation: especial 5s;
@@ -246,6 +262,7 @@
                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
                 font-size: x-large;
                 margin: 20px;
+                text-align: center;
             }
             .cuerpo__especial__caja__derecha__ruta{
                 text-decoration: none;
@@ -269,4 +286,65 @@
                 border-top-left-radius: 20px;
             }
         }
+}
+
+.cuerpo__conocelos {
+    padding: 40px;
+    .cuerpo__conocelos__titulo {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .cuerpo__conocelos__caja {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px 10px 20px;
+        border: ridge 10px red;
+        margin: 0px 50px 0px 50px;
+        border-radius: 40px;
+        background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+        .cuerpo__conocelos__caja__descripcion {
+            text-align: center;
+            .cuerpo__conocelos__caja__descripcion__texto {
+                font-size: 2rem;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: green;
+                padding: 10px;
+            }
+            @media screen and (max-width: 1024px) {
+                .cuerpo__conocelos__caja__descripcion__texto {
+                    font-size: 1rem;
+                }
+            }
+            .cuerpo__conocelos__caja__descripcion__ruta {
+                text-decoration: none;
+                border:rgb(191, 83, 83) 3px solid;
+                padding: 10px;
+                border-radius: 20px;
+                background-color: burlywood;
+                color: black;
+            }
+        }
+        .cuerpo__conocelos__caja__imagen {
+            .cuerpo__conocelos__caja__imagen__grupo {
+                padding: 20px;
+                width: 100%;
+            }
+        }
+    }
+    @media screen and (max-width: 1612px) {
+        .cuerpo__conocelos__caja {
+            flex-direction: column;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .cuerpo__conocelos__caja {
+            font-size: 1rem;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .cuerpo__conocelos__caja {
+            margin: 0;
+        }
+    }
 }
