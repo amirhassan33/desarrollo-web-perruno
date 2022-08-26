@@ -6,7 +6,7 @@
 
 /*-------Este es el header-------*/
 header .navbar {
-  background: #ff6200; }
+  background: #ff62; }
   header .navbar div .imagen_navbar {
     width: 100px;
     height: 100px; }
@@ -522,7 +522,7 @@ header .navbar {
       flex-direction: column;
       align-items: center;
       height: 100%;
-      background-image: linear-gradient(to top, #ff6200, yellow, #ff6200); }
+      background-image: linear-gradient(to top, #ff62, #ffff86, #ff62); }
       .aplicar__grid .aplicar__grid__aside .aplicar__grid__aside__section .aplicar__grid__aside__section__caja1 {
         width: 370px;
         height: 1150px;
@@ -957,7 +957,7 @@ main .cuerpo__mapa {
 
 /*-------Este es el footer-------*/
 .pie .pie__caja {
-  background: #ff6200;
+  background: #ff62;
   display: flex;
   justify-content: space-between; }
   .pie .pie__caja .pie__caja__redessociales .pie__caja__imagen {
