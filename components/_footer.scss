@@ -6,7 +6,7 @@
 
 .pie{
     .pie__caja{
-        background-image: linear-gradient(to left, nth($color, 1), nth($color, 2), nth($color, 3));
+        background: #ff6200;
         display: flex;
         justify-content: space-between;
         .pie__caja__redessociales{

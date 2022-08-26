@@ -260,7 +260,7 @@
             flex-direction: column;
             align-items: map-get($contenido-cuadro, posicion-texto);
             height: 100%;
-            background-image: linear-gradient(to top, nth($color, 4), rgb(27, 179, 27), nth($color, 8));
+            background-image: linear-gradient(to top, #ff6200, yellow, #ff6200);
             .aplicar__grid__aside__section__caja1{
                 width: 370px;
             height: 1150px;

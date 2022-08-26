@@ -6,7 +6,7 @@
 
 header{
     .navbar {
-        background-image: linear-gradient(to right, nth($color, 4), nth($color, 2), nth($color, 5));
+        background: #ff6200;
         div{
             .imagen_navbar{
                 @include ancho-largo (100px,100px);
