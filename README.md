@@ -1,6 +1,10 @@
 <h3 align="center">Es una web para conocer a mis perritos y ofrecer mis servicios de desarrollo web</h3>
 
-- 🔭 Trabaje yo solo en la creación y subirlo a la web mediante Github [Desarrollo web perruno](https://amirhassan33.github.io/desarrollo-web-perruno)
+- 🔭 Trabaje yo solo en la creación de la pagina y subirlo a la web mediante Github [Desarrollo web perruno](https://amirhassan33.github.io/desarrollo-web-perruno)
+
+El formulario, que esta en contacto, no valida y tampoco guarda datos en bases de datos. Recomiendo mirar la Web desde un celular ya que la pagina es responsiva. Si el monito es HD recomiendo verlo en 75% y si es FULL HD verlo al 100%.
+
+En proximos trabajos estoy haciendo mas paginas con bases de datos y aplicando JavaScript que realizan acciones.
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
